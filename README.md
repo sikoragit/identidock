@@ -1,2 +1,2 @@
 # identidock
-"Using Docker" Learing Software
+"Using Docker" Learning Software
