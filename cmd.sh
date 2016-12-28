@@ -8,6 +8,7 @@ pwd
    exec python "identidock.py"
 elif [[ $ENV == 'UNIT' ]]; then
 pwd
+ls -a  ./tests.py
     echo "Running Unit Tests"
     exec python ./tests.py
 else
