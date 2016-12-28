@@ -9,6 +9,7 @@ pwd
 elif [[ $ENV == 'UNIT' ]]; then
 pwd
 ls -a  ./tests.py
+ls -a
     echo "Running Unit Tests"
     exec python ./tests.py
 else
