@@ -9,7 +9,7 @@ pwd
 elif [[ $ENV == 'UNIT' ]]; then
 pwd
     echo "Running Unit Tests"
-    exec python "tests.py"
+    exec python "./tests.py"
 else
 pwd
    echo "Running Production Sever"
