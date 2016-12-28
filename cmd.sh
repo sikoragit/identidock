@@ -5,7 +5,7 @@ if [[ $ENV == 'DEV' ]]; then
    exec python "identidock.py"
 elif [[ $ENV == 'UNIT' ]]; then
     echo "Running Unit Tests"
-    exec python "tests.py"
+    exec python "app/tests.py"
 else
    echo "Running Production Sever"
    exec uwsgi --http 0.0.0.0:9090 --wsgi-file /app/identidock.py \
