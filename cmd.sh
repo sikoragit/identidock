@@ -12,7 +12,10 @@ ls -a  ./tests.py
 ls -al
 ls -al ..
     echo "Running Unit Tests"
-    exec python ./tests.py
+    exec python ./tests.py || {
+	pwd
+	ls -al
+    }
 else
 pwd
    echo "Running Production Sever"
