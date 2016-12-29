@@ -14,6 +14,9 @@ sudo docker-compose $COMPOSE_ARGS up -d
 # Run unit tests
 sudo docker-compose $COMPOSE_ARGS run --no-deps --rm \
                     -e ENV=UNIT identidock
+#docker run -v /var/run/docker.sock:/var/run/docker.sock -e ENV=UNIT jenkins_identidock
+ERR=$?
+
 ERR=$?
 
 # Run system test if unit tests passed
